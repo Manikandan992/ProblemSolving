@@ -1,0 +1,24 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int n= input.nextInt(),d,s=0;
+        if (n>0){
+            while (n>0){
+                d=n%10;
+                if (d%2==0)
+                    s+=d*d;
+                n=n/10;
+            }
+            System.out.println(s);
+        }
+    }
+}
+
+/*Input: 56895
+output: 100
+Explanation: The even digits in 56895 are 6,8 their sum of square is 100.*/
